@@ -14,7 +14,7 @@ resizeCanvas();
 const stars = [];
 let nonDummyStars = [];
 
-fetch('../data/stars.json')
+fetch('./data/stars.json')
   .then(res => res.json())
   .then(starsData => {
     starsData.forEach(data => {
